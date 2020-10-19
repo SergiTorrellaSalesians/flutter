@@ -38,31 +38,40 @@ class _AddDogFormPageState extends State<AddDogFormPage> {
           padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 32.0),
           child: new Column(children: [
             new Padding(
-              padding: const EdgeInsets.only(bottom: 8.0),
+              padding: const EdgeInsets.only(bottom: 5.0),
               child: new TextField(
                 controller: nameController,
-                onChanged: (v) => nameController.text = v,
+                //onChanged: (v) => nameController.text = v,
                 decoration: new InputDecoration(labelText: 'Name the car'),
               ),
             ),
             new Padding(
-              padding: const EdgeInsets.only(bottom: 8.0),
+              padding: const EdgeInsets.only(bottom: 5.0),
               child: new TextField(
                 controller: locationController,
-                onChanged: (v) => locationController.text = v,
+                //onChanged: (v) => locationController.text = v,
                 decoration: new InputDecoration(labelText: "Car's information"),
               ),
             ),
             new Padding(
-              padding: const EdgeInsets.only(bottom: 8.0),
+              padding: const EdgeInsets.only(bottom: 5.0),
               child: new TextField(
                 controller: descriptionController,
-                onChanged: (v) => descriptionController.text = v,
+                //onChanged: (v) => descriptionController.text = v,
                 decoration: new InputDecoration(labelText: 'All about the car'),
               ),
             ),
             new Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.only(bottom: 5.0),
+              child: new TextField(
+                controller: urlImageController,
+                //onChanged: (v) => urlImageController.text = v,
+                decoration: new InputDecoration(labelText: 'Car image'),
+                // R5 https://i.pinimg.com/originals/25/50/07/2550074de39c71179b741f5673a4d02f.jpg
+              ),
+            ),
+            new Padding(
+              padding: const EdgeInsets.all(15.0),
               child: new Builder(
                 builder: (context) {
                   return new RaisedButton(
